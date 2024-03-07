@@ -1,5 +1,37 @@
-# Getting Started with Create React App
+# Notificaciones push
 
+## 1. Instalamos web push global y generamos las vapid keys
+npm install web-push -g
+web-push generate-vapid-keys [--json]
+-> Las keys se guardaran en el archivo serviceWorkerRegistration.js
+
+## 2. Guardamos las keys en ServiceWorkerRegistration
+A partir de la linea 21
+
+## 3. Modificamos register() en el ServiceWorkerRegistration.js
+EN la linea 60
+
+## 4. Probamos que se puedan habilitar los permisos -> Los habilitamos
+
+
+## 5. Creamos la primera notificación push automática, cada vez que haya una versión disponible
+##      self.registration.showNotificacion(title, { body })
+Lo copiamos dentro del service-worker, en la parte de los listeners
+------------------------------------------------------------------------------------------------
+## 6. Creamos el servidor express.
+Creamos el directorio "server", luego ingresamos, y en la consola: npm init
+*npm i express cors (Cors para las llamadas interservidores)
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------
+# Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

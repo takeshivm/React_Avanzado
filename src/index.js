@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import { onServiceWorkerUpdate } from '@3m1/service-worker-updater'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -10,6 +13,13 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+
+//-------------------------------------------------------------------------
+serviceWorkerRegistration.register({
+  onUpdate: onServiceWorkerUpdate
+});
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

@@ -49,3 +49,5 @@ const TaskList = () => {
 }
 
 export default TaskList;
+
+//npx create-react-app React_PWA --template cra-template-pwa

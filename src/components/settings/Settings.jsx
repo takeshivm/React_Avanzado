@@ -1,6 +1,6 @@
 import React from 'react'
 import useLocalStorage from '../../hooks/useLocalStorage';
-
+/*
 const defaultCongif = {
     theme: 'dark',
     lang: 'es'
@@ -30,3 +30,4 @@ export default function Settings() {
         </div>
     )
 }
+*/
